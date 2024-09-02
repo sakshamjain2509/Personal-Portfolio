@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Saksham Jain" />
+    <meta property="og:description" content="Portfolio Website of Saksham Jain" />
+    <meta property="og:url" content=https://github.com/sakshamjain2509 />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+
+    <title>Saksham Jain</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/cb31bfb0c6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" alt="" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Saksham Jain</span><br />from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------------About Section----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpeg" alt="" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="text-align: justify; padding-top: 20px;">
+                        
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>LANGUAGES</span><br />JavaScript, Java,  Python, SQL</li>
+                            <li><span>FRONTEND TECHNOLOGIES</span><br /> ReactJS, JavaScript, Bootstrap, HTML, CSS</li>
+                            <li><span>BACKEND TECHNOLOGIES</span><br />Javascript, NodeJS, ExpressJS, Python, Java,
+                                API</li>
+                            <li><span>DATABASE</span><br />MySQL, MongoDB, MS SQL Server</li>
+                            <li><span>DEVELOPER TOOLS</span><br />Git, GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Code Crafty</span><br />Intern (February 2024 - July 2024)
+                            <br>
+                            <para>E-commerce DB with MySQL increasing overall performance. Extract data from various websites using HTML
+                                ,CSS and Python</para>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.TECH</span><br />Meerut Institute of Engineering & technology (AKTU) <br> 2021-2025
+                            </li>
+                            <li><span>SENIOR SECONDARY</span><br />Maples Academy (CBSE) <br> 2020-2021
+                            </li>
+                            <li><span>SECONDARY</span><br />Aatman Public School (CBSE) <br> 2018-2019</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Full Stack Development</h2>
+                    <p style="text-align: justify;">
+                        I provide top-notch web development services tailored to your needs. From sleek front-end
+                        designs to robust back-end functionality, I specialize in creating user-friendly and responsive
+                        websites. Whether it's building from scratch or enhancing existing sites, I'm here to elevate
+                        your online presence with cutting-edge technology and a touch of creativity.
+                    </p>
+                    <a target="_blank" style="font-size: 15px; color: #FF5F1F;"
+                        href="https://www.google.com/search?q=full+stack+developement&sca_esv=77c4f50781debaf0&sxsrf=ADLYWII9C0VPLOQGqQf2xWKpoTKe1DJWCg%3A1725288465728&ei=EdDVZpOXLMXl1e8PhpiD2AI&ved=0ahUKEwjT44mxwKSIAxXFcvUHHQbMACsQ4dUDCBA&uact=5&oq=full+stack+developement&gs_lp=Egxnd3Mtd2l6LXNlcnAiF2Z1bGwgc3RhY2sgZGV2ZWxvcGVtZW50Mg4QABiABBiRAhixAxiKBTILEAAYgAQYkQIYigUyCxAAGIAEGJECGIoFMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGApIgyNQ9wdYgCFwAngBkAEAmAH_A6ABsQ2qAQswLjEuMy4xLjAuMbgBA8gBAPgBAZgCB6AC0grCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICDRAAGIAEGLEDGEMYigXCAgUQABiABMICCxAAGIAEGLEDGIMBmAMAiAYBkAYKkgcJMi4xLjMuMC4xoAf0Kg&sclient=gws-wiz-serp">Learn
+                        more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Python Developer</h2>
+                    <p style="text-align: justify;">
+                        I have experience in Python development, particularly in data extraction, where I have honed my skills in efficiently gathering and processing data using Python's robust libraries. Additionally, I have earned an NPTEL certificate in Data Structures and Algorithms (DSA) for Advanced Python, which has deepened my understanding of complex algorithms and their implementation in Python. This combination of practical experience and advanced theoretical knowledge strengthens my ability to tackle challenging programming tasks and develop efficient solutions.
+                    </p>
+                    <a target="_blank" style="font-size: 15px; color: #FF5F1F;"
+                        href="https://www.google.com/search?q=PYTHON+DEVELOPMENT&oq=PYTHON+DEVELOPMENT&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDINCAIQABiDARixAxiABDIHCAMQABiABDIKCAQQABixAxiABDIKCAUQABixAxiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDY2MTlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">Learn
+                        more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="" />
+                    <img src="work-11.png" alt="" />
+                    <img src="work-111.png" alt="" />
+                    <div class="layer">
+                        <h3>Amazon Website</h3>
+                        <p>
+                        <ul>
+                            <li style="padding-bottom: 5px;">Built a Complete website with frontend in HTML, CSS</li>
+                            <li style="padding-bottom: 5px;">Integrated with the other websites.</li>
+                        </ul>
+                        </p>
+                        <a style="text-align: center;" target="_blank" href="https://sakshamjain2509.github.io/Amazon-Clone/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> jainsaksam260@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 6398344486</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.instagram.com/sakshamjain2537/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/saksham-jain-1459b9215/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/sakshamjain2509"><i
+                                class="fa-brands fa-github"></i></a>   
+                    </div>
+                    <a href="Resume Saksham.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2024 © Saksham Jain. All rights reserved. Made with <i class="fas fa-heart"></i> by SJ</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
